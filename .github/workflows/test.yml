@@ -13,4 +13,9 @@ jobs:
           cd /root/ros2_ws
           sudo apt-get update
           sudo apt-get -y install ament-cmake
+          sudo apt-get -y install rosidl_default_generators
+          sudo apt-get -y install rosidl_default_runtime
+          sudo apt-get -y install rosidl_interface_packages
+          sudo apt-get -y install ament_lint_auto
+          sudo apt-get -y install ament_lint_common
           colcon build
