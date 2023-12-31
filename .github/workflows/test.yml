@@ -11,4 +11,6 @@ jobs:
         run: |
           rsync -av ./ /root/ros2_ws/src/joint_msgs/    # リポジトリの下をros2_ws下にコピー
           cd /root/ros2_ws
+          sudo apt-get update
+          sudo apt-get -y install ament-cmake
           colcon build
