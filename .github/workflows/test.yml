@@ -12,8 +12,7 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/joint_msgs/    # リポジトリの下をros2_ws下にコピー
           cd /root/ros2_ws
           sudo apt-get update
-          sudo apt-get -y install ament-cmake
-          sudo apt-get -y install rosidl_default_generators
+          sudo apt-get -y install ament-cmake rosidl_default_generators
           sudo apt-get -y install rosidl_default_runtime
           sudo apt-get -y install rosidl_interface_packages
           sudo apt-get -y install ament_lint_auto
